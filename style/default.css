@@ -118,6 +118,10 @@ footer {
   justify-content: space-between;
 }
 
+#picture-project img {
+  width: 90%;
+}
+
 /* LES CLASSES */
 .separator {
   width: 10em;
