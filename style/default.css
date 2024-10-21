@@ -70,13 +70,13 @@ h3:after {
 
 ul {
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 li {
   list-style-type: none;
-  display: inline;
-  padding: 0;
-  margin: 5px;
 }
 
 li:hover {
@@ -106,13 +106,13 @@ footer {
 
 #logo {
   margin-top: 30px;
-  width: 100px;
+  width: 30%;
 }
 
 #projets {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #picture-project img,
@@ -166,7 +166,8 @@ footer {
   min-width: 400px;
   height: 266px;
 }
-display .picture {
+
+.picture {
   width: 400px;
   height: 266px;
   overflow: hidden;
