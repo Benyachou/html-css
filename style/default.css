@@ -95,6 +95,10 @@ footer {
   text-align: center;
 }
 
+form {
+  padding: 15px;
+}
+
 /* LES ID */
 
 #contact {
