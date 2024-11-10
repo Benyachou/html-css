@@ -37,17 +37,40 @@
 
 
     <form action="traitement.php" method="post">
-        <p>
-            Remplissez ce formulaire de contact. <br />
-            <label for="">Prénom</label> :
-            <!-- Zone de saisie monoligne -->
-            <input type="text" name="prenom" placeholder="Exemple : Keny">
-        </p>
 
-        <p>
-            <label for="">Description</label>
-            <textarea name="description" id=""></textarea>
-        </p>
+        <div>
+            Remplissez ce formulaire de contact. <br />
+            <label for="nom">Nom</label> :
+            <input type="text" name="nom" placeholder="Exemple : Dujardin"> <br />
+
+            <label for="prénom">Prénom</label> :
+            <!-- Zone de saisie monoligne -->
+            <input type="text" name="prenom" placeholder="Exemple : Keny"> <br />
+
+            <label for="email">Email</label> :
+            <input type="text" name="email" placeholder="Exemple : SalutToi@sympa.com"> <br />
+        </div>
+
+        <div>
+            <label for="">Vous etes qui ?</label> <br />
+            <select name="identite" id="">
+                <optgroup label="Recruteur">
+                    <option value="chasseur de tete">Chasseur de tete</option>
+                    <option value="centre de formation">Centre de formation</option>
+                    <option value="entreprise" selected>Entreprise</option>
+                    <option value="gens du voyage" selected>Gens du voyage</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="">Que puis-je faire pour vous ?</label><br />
+            <textarea name="description" id="" placeholder="Description"></textarea>
+        </div>
+
+        <div class="button">
+            <button type="submit">Envoyer votre message</button>
+        </div>
 
     </form>
 
